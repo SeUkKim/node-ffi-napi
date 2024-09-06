@@ -8,8 +8,8 @@
     ],
     'include_dirs': [
       "<!@(node -p \"require('node-addon-api').include\")",
-      "<!@(node -p \"require('get-uv-event-loop-napi-h').include\")",
-      "<!@(node -p \"require('ref-napi/lib/get-paths').include\")",
+      "<!@(node -p \"require('@eleccookie/get-uv-event-loop-napi-h').include\")",
+      "<!@(node -p \"require('@eleccookie/ref-napi/lib/get-paths').include\")",
     ],
     'dependencies': [
       "<!(node -p \"require('node-addon-api').gyp\")",
@@ -25,6 +25,7 @@
     'msvs_settings': {
       'VCCLCompilerTool': { 'ExceptionHandling': 1 },
     },
+    'defines': [  ],
     'conditions': [
       ['OS=="win"', {
         'sources': [

@@ -1,0 +1,36 @@
+{
+  "name": "package-repo",
+  "version": "1.0.0",
+  "description": "Give me a package.json and I'll tell you about its repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeke/package-repo.git"
+  },
+  "keywords": [
+    "package.json",
+    "repository",
+    "github",
+    "bitbucket",
+    "url"
+  ],
+  "author": "zeke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/package-repo/issues"
+  },
+  "homepage": "https://github.com/zeke/package-repo#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "require-dir": "^0.3.0",
+    "snazzy": "^3.0.0"
+  },
+  "dependencies": {
+    "bitbucket-url-to-object": "^0.3.0",
+    "github-url-to-object": "^2.2.1"
+  }
+}
